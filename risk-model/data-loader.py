@@ -27,5 +27,9 @@ def load_factor_returns(path: str) -> pd.DataFrame:
     """
     Load factor returns from CSV
     """
-
-    pass
+    df = pd.read_csv(path)
+    missing = set(REQUIRED_COLS) - set(df.columns)
+    if missing:
+        raise ValueError(f"Missing columns: {missing}")
+    
+    return df
