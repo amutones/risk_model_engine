@@ -1,0 +1,15 @@
+data:
+  portfolio_file: "risk-model-project/data/example-portfolio.csv"
+  factor_returns_file: "risk-model-project/data/factor-returns.csv"
+
+scenarios:
+  - name: "Rates +100bps"
+    type: "rates"
+    shock: 0.01
+  - name: "Equity -10%"
+    type: "equity"
+    shock: -0.10
+
+portfolio:
+  base_currency: "USD"
+  fx_tolerance_bps: 50
