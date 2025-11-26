@@ -1,6 +1,6 @@
 data:
-  portfolio_file: "risk-model-project/data/example-portfolio.csv"
-  factor_returns_file: "risk-model-project/data/factor-returns.csv"
+  portfolio_file: "risk_model_project/data/example_portfolio.csv"
+  factor_returns_file: "risk_model_project/data/factor_returns.csv"
 
 scenarios:
   - name: "Rates +100bps"
